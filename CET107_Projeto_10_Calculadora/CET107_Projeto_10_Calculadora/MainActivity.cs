@@ -1,6 +1,8 @@
 namespace CET107_Projeto_10_Calculadora
 {
-    [Activity(Label = "@string/app_name", MainLauncher = true)]
+    [Activity(Label = "@string/app_name", 
+        Theme ="@style/AppTheme",
+        MainLauncher = true)]
     public class MainActivity : Activity
     {
         protected override void OnCreate(Bundle? savedInstanceState)

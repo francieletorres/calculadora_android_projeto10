@@ -2,7 +2,11 @@
 <resources>
 
 	<!--Estilo geral da aplicacao-->
-
+	<style name="AppTheme" parent="android:Theme.Holo.Light.NoActionBar">
+	
+	
+	
+	</style>
 
 	<!--Estilo dos controles ui da aplicacao-->
 
