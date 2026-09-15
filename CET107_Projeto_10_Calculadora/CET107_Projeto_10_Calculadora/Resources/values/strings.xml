@@ -4,4 +4,6 @@
     <string name="app_text">Hello, Android!</string>
 
     <string name="sInicial">123</string>
+    <string name="logoapp">Logo da App</string>
+    <string name="saida">Saída</string>
 </resources>

@@ -3,13 +3,10 @@
 
 	<!--Estilo geral da aplicacao-->
 	<style name="AppTheme" parent="android:Theme.Holo.Light.NoActionBar">
-	
-	
-	
+
 	</style>
 
 	<!--Estilo dos controles ui da aplicacao-->
-
 
 	<!--Estilo para os botoes-->
 	<style name="button_calculator">
