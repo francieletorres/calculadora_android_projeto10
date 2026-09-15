@@ -1,6 +1,7 @@
 namespace CET107_Projeto_10_Calculadora
 {
     [Activity(Label = "@string/app_name", 
+        Icon = "@drawable/icon_calculadora",
         Theme ="@style/AppTheme",
         MainLauncher = true)]
     public class MainActivity : Activity
