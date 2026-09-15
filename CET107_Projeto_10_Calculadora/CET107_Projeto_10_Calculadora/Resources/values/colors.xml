@@ -14,5 +14,6 @@
 
 	<!-- Cores dos controlos UI - textView -->
 	<color name="color_tvbackground">#FFF</color>
-	<color name="color_tvforeground">@color/background_dark</color>
+	<color name="color_tvforeground">@color/colorPrimaryDark</color>
+	
 </resources>

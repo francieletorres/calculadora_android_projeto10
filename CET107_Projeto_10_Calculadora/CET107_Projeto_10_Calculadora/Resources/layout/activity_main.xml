@@ -32,4 +32,145 @@
     </HorizontalScrollView>
 
 
+	<!--Conjunto de botoes -->
+	<androidx.gridlayout.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        app:rowCount="5"
+        app:columnCount="4"
+        app:orientation="horizontal"
+        app:alignmentMode="alignMargins"
+        app:useDefaultMargins="true"
+        >
+
+		<!-- Primeira linha-->
+		<Button 
+           android:text="DEL"
+            style="@style/button_calculator"
+            app:layout_columnWeight="1"
+            app:layout_columnSpan="4"
+            app:layout_rowWeight="1"
+            />
+
+
+		<!-- Segunda linha: botoes 7 8 9 :-->
+		<Button
+	        android:text="7"
+		    style="@style/button_calculator"
+		    app:layout_columnWeight="1"
+		    app:layout_rowWeight="1"
+             />
+
+		<Button
+	        android:text="8"
+	        style="@style/button_calculator"
+	        app:layout_columnWeight="1"
+	        app:layout_rowWeight="1"
+             />
+
+		<Button
+	        android:text="9"
+	        style="@style/button_calculator"
+	        app:layout_columnWeight="1"
+	        app:layout_rowWeight="1"
+             />
+
+		<Button
+		    android:text=":"
+		    style="@style/button_calculator"
+		    app:layout_columnWeight="1"
+		    app:layout_rowWeight="1"
+             />
+
+
+		<!-- Terceira linha: botoes 4 5 6 - -->
+		<Button
+	        android:text="4"
+		    style="@style/button_calculator"
+		    app:layout_columnWeight="1"
+		    app:layout_rowWeight="1"
+             />
+
+		<Button
+	        android:text="5"
+	        style="@style/button_calculator"
+	        app:layout_columnWeight="1"
+	        app:layout_rowWeight="1"
+             />
+
+		<Button
+	        android:text="6"
+	        style="@style/button_calculator"
+	        app:layout_columnWeight="1"
+	        app:layout_rowWeight="1"
+             />
+
+		<Button
+		    android:text="-"
+		    style="@style/button_calculator"
+		    app:layout_columnWeight="1"
+		    app:layout_rowWeight="1"
+             />
+
+		<!-- Qaurta linha: botoes 1 2 3 x  -->
+		<Button
+	        android:text="1"
+		    style="@style/button_calculator"
+		    app:layout_columnWeight="1"
+		    app:layout_rowWeight="1"
+             />
+
+		<Button
+	        android:text="2"
+	        style="@style/button_calculator"
+	        app:layout_columnWeight="1"
+	        app:layout_rowWeight="1"
+             />
+
+		<Button
+	        android:text="3"
+	        style="@style/button_calculator"
+	        app:layout_columnWeight="1"
+	        app:layout_rowWeight="1"
+             />
+
+		<Button
+		    android:text="X"
+		    style="@style/button_calculator"
+		    app:layout_columnWeight="1"
+		    app:layout_rowWeight="1"
+             />
+
+
+		<!-- Quinta linha: botoes . 0 = + -->
+		<Button
+	        android:text="."
+		    style="@style/button_calculator"
+		    app:layout_columnWeight="1"
+		    app:layout_rowWeight="1"
+             />
+
+		<Button
+	        android:text="0"
+	        style="@style/button_calculator"
+	        app:layout_columnWeight="1"
+	        app:layout_rowWeight="1"
+             />
+
+		<Button
+	        android:text="="
+	        style="@style/button_calculator"
+	        app:layout_columnWeight="1"
+	        app:layout_rowWeight="1"
+             />
+
+		<Button
+		    android:text="+"
+		    style="@style/button_calculator"
+		    app:layout_columnWeight="1"
+		    app:layout_rowWeight="1"
+             />
+
+	</androidx.gridlayout.widget.GridLayout>
 </LinearLayout>
