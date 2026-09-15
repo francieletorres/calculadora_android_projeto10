@@ -9,15 +9,15 @@
 
 	<!--Estilo para os botoes-->
 	<style name="button_calculator">
-		<item name="android:textSize">20sp</item>
+		<item name="android:textSize">@dimen/textsize_botao</item>
 		<item name="android:textColor">@color/button_foreground</item>
 		<item name="android:textStyle">bold</item>
 		<item name="android:background">@drawable/bg_mybutton</item>
 		<item name="android:gravity">center</item>
-		<item name="android:padding">10dp</item>
+		<item name="android:padding">@dimen/padding_botao</item>
 		<item name="android:layout_width">0dp</item>
 		<item name="android:layout_height">0dp</item>
-		<item name="android:layout_margin">3dp</item>
+		<item name="android:layout_margin">@dimen/margin_botao</item>
 		<item name="android:onClick">ButtonClick</item>	
 	</style>
 

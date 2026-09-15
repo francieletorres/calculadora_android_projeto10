@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+
+	<!-- Margens-->
+	<dimen name="margin_resultado">8dp</dimen>
+	<dimen name="margin_botao">4dp</dimen>
+
+	<!-- Enchimentos -->
+	<dimen name="padding_resultado">12dp</dimen>
+	<dimen name="padding_botao">12dp</dimen>
+
+	<!-- Texto - Tamanho -->
+	<dimen name="textsize_resultado">45sp</dimen>
+	<dimen name="textsize_botao">25sp</dimen>
+
+
+</resources>
