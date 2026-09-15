@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">CET107_Projeto_10_Calculadora</string>
+    <string name="app_name2">Calculadora - CET107</string>
     <string name="app_text">Hello, Android!</string>
+
+    <string name="sInicial">123</string>
 </resources>

@@ -19,7 +19,7 @@
 		<TextView
             android:id="@+id/calculator_text_view"
             android:textSize="50sp"
-            android:text="123"
+            android:text="@string/sInicial"
             android:background="@color/color_tvbackground"
             android:textColor="@color/color_tvforeground"
             android:padding="10dp"
