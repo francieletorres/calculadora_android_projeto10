@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+
+	<!--Cores de base-->
+	<color name="colorPrimary">#5e7974</color>
+	<color name="colorPrimaryDark">#345953</color>
+	<color name="colorPrimaryLight">#689a92</color>
+	<color name="colorAccent">#689a92</color>
+
+	<!--Cores dos controlos UI - Botoes-->
+	<color name="button_foreground">#FFFFFF</color>
+	<color name="button_border">@color/colorPrimary</color>
+	<color name="button_focused">#58857e</color>
+
+	<!-- Cores dos controlos UI - textView -->
+	<color name="color_tvbackground">#FFF</color>
+	<color name="color_tvforeground">@color/background_dark</color>
+</resources>
