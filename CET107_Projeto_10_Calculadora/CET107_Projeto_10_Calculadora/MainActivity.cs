@@ -13,7 +13,10 @@ namespace CET107_Projeto_10_Calculadora
         private string operacao = "";
 
         //saidas
-        private TextView calculator_text_viewC;
+        private TextView calculator_text_viewC = null;
+
+        private ImageButton? ibSairC = null;
+
 
         protected override void OnCreate(Bundle? savedInstanceState)
         {
@@ -23,6 +26,25 @@ namespace CET107_Projeto_10_Calculadora
             SetContentView(Resource.Layout.activity_main);
 
             calculator_text_viewC = FindViewById<TextView>(Resource.Id.calculator_text_view);
+
+
+            ibSairC = FindViewById<ImageButton>(Resource.Id.ibSair);
+
+            if(ibSairC != null )
+            {
+                ibSairC.Click += (sender, e) =>
+                {
+                    new AlertDialog.Builder(this)
+                        .SetTitle("Sair") 
+                        .SetMessage("Tem certeza que deseja sair?") 
+                        .SetPositiveButton("Sim", (s, args) => Finish()) 
+                        .SetNegativeButton("Não", (s, args) => { }) 
+                        .Show(); 
+
+                    //Finish(); // Fecha a atividade atual, encerrando a aplicação.
+
+                };
+            }
 
 
         }
