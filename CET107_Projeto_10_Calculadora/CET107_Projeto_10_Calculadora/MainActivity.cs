@@ -13,7 +13,7 @@ namespace CET107_Projeto_10_Calculadora
         private string operacao = "";
 
         //saidas
-        private TextView calculator_text_viewC = null;
+        private TextView calculator_text_viewC = null!;
 
         private ImageButton? ibSairC = null;
 
@@ -25,8 +25,8 @@ namespace CET107_Projeto_10_Calculadora
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.activity_main);
 
-            calculator_text_viewC = FindViewById<TextView>(Resource.Id.calculator_text_view);
-
+            calculator_text_viewC = FindViewById<TextView>(Resource.Id.calculator_text_view)
+                ?? throw new InvalidOperationException("TextView não encontrada");
 
             ibSairC = FindViewById<ImageButton>(Resource.Id.ibSair);
 
@@ -62,27 +62,32 @@ namespace CET107_Projeto_10_Calculadora
         }
 
         //ButtonClick()
+        [System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessage(
+            "triming",
+            "IL2026",
+            Justification ="Método chamado via android:onlick em layout XML!")]
         [Java.Interop.Export("ButtonClick")]
         public void ButtonClick(Android.Views.View view)
         {
             //obter o botao que foi clicado
             Button button = (Button)view;
+            string texto = button.Text?.ToString() ?? "";
 
-            if("0123456789.".Contains(button.Text))
+            if("0123456789.".Contains(texto))
             {
-                AdicionaDigitoOuPontoDecimal(button.Text);
+                AdicionaDigitoOuPontoDecimal(texto);
             }
-            else if ("+-x/".Contains(button.Text))
+            else if ("+-x/".Contains(texto))
             {
-               AdicionaOperador(button.Text);
+               AdicionaOperador(texto);
             }
-            else if(button.Text == "=")
+            else if(texto == "=")
             {
                 CalcularResultado();
                 operacao = "";
                 AtualizaCaixaDoResultado();
             }
-            else if(button.Text == "DEL")
+            else if(texto == "DEL")
             {
                 LimpaParametros();
                 AtualizaCaixaDoResultado();
