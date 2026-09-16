@@ -146,7 +146,7 @@
              />
 
 		<Button
-		    android:text=":"
+		    android:text="/"
 		    style="@style/button_calculator"
 		    app:layout_columnWeight="1"
 		    app:layout_rowWeight="1"
@@ -205,7 +205,7 @@
              />
 
 		<Button
-		    android:text="X"
+		    android:text="x"
 		    style="@style/button_calculator"
 		    app:layout_columnWeight="1"
 		    app:layout_rowWeight="1"
