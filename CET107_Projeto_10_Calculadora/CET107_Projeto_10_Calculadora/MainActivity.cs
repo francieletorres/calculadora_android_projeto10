@@ -30,22 +30,34 @@ namespace CET107_Projeto_10_Calculadora
 
             ibSairC = FindViewById<ImageButton>(Resource.Id.ibSair);
 
-            if(ibSairC != null )
+            if (ibSairC != null)
             {
                 ibSairC.Click += (sender, e) =>
                 {
-                    new AlertDialog.Builder(this)
-                        .SetTitle("Sair") 
-                        .SetMessage("Tem certeza que deseja sair?") 
-                        .SetPositiveButton("Sim", (s, args) => Finish()) 
-                        .SetNegativeButton("Não", (s, args) => { }) 
-                        .Show(); 
-
+                    VerificaSaida();
+                   
                     //Finish(); // Fecha a atividade atual, encerrando a aplicação.
 
                 };
             }
+        }
 
+        private void VerificaSaida()
+        {
+            if (this == null) return;
+
+            var builder = new Android.App.AlertDialog.Builder(this);
+            builder.SetTitle("Sair");
+            builder.SetMessage("Tem certeza que deseja sair?");
+            builder.SetPositiveButton("Sim", (sender, e) =>
+            {
+                Finish();
+            });
+            builder.SetNegativeButton("Não", (sender, e) =>
+            {
+
+            });
+            builder.Show();
 
         }
 
